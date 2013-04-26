@@ -12,6 +12,7 @@ What you do with this is your problem, not mine. And yes, you can do this all _w
 
 ## Usage
 You may invoke FastDomainDump against a specific domain controller or a domain (will dump _all_ primary and backup servers for the domain):
+
     FastDomainDump.exe domain MYDOMAIN
     FastDomainDump.exe server MYPDC
 
@@ -23,16 +24,20 @@ It outputs tab delimited values (easily readable in Calc or Excel) including the
 - User Comment
 - Flags
 - Auth Flags
-- Pw Age
-- Expired Pw?
+- Password Age
+- Expired Password?
 - Last Logon
 - Last Logoff
 - Expiry Date
 - Priv
-- Bad Pw Count
+- Bad Password Count
 - Profile
 - Homedir
 - Max Storage
 - Workstations
 
+Note that not all values are present on all servers, some may require certain features to be enabled or be in use.
 These will be written to a file called serverName.txt.
+
+## License
+See COPYING file.
